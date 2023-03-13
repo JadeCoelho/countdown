@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quanto Tempo Falta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+  <body class="flex-column">
+    <header>
+      <h2>QUANTO <span>TEMPO</span> FALTA</h2>
+      <p>Calcule quanto tempo falta para uma data escolhida</p>
+    </header>
+
+    <div class="container flex-column">
+      <section class="hoje">
+        <h3>AGORA</h3>
+        <div class="data-hora flex-row">
+          <div class="data-atual">
+            <span class="dia"></span> / <span class="mes"></span> /
+            <span class="ano"></span>
+          </div>
+          <div class="hora-atual">
+            <span class="hr"></span> : <span class="min"></span> :
+            <span class="seg"></span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>SELECIONE UMA DATA</h3>
+        <div class="escolher flex-row">
+          <input type="date" name="" id="data" />
+          <button class="btn-descobrir">CALCULAR</button>
+        </div>
+      </section>
+
+      <section class="resposta">
+        <h3>RESPOSTA</h3>
+        <div class="restante flex-row">
+          <span>
+            <p class="dias-res res"></p>
+            <p>dia(s)</p>
+          </span>
+
+          <span>
+            <p class="hrs-res res"></p>
+            <p>hora(s)</p>
+          </span>
+
+          <span>
+            <p class="mins-res res"></p>
+            <p>minuto(s)</p>
+          </span>
+
+          <span>
+            <p class="segs-res res"></p>
+            <p>segundo(s)</p>
+          </span>
+        </div>
+        <p class="erro"></p>
+        <button class="btn-ok">Entendi</button>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

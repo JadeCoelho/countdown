@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #302e3b;
+  color: #eee;
+  justify-content: center;
+  padding: 50px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  box-shadow: 3px 4px 10px #00000041, -3px -4px 10px #00000041;
+  border-radius: 30px;
+  padding: 30px;
+  background-color: #23212e;
+  flex-wrap: wrap;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+header h2 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+header span {
+  color: #029fb7;
+}
+
+.container section {
+  padding: 20px;
+  width: 100%;
+}
+
+.container section:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.container h3 {
+  padding: 8px;
+  margin-bottom: 20px;
+  background-color: #302e3b;
+  color: #029fb7;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.escolher input,
+button,
+.hoje input {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #029fb7;
+  color: #fff;
+}
+button:hover {
+  background-color: #00d8e7;
+}
+
+.opcoes input {
+  margin: 0 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.res {
+  padding-bottom: 10px;
+}
+
+.btn-ok {
+  display: none;
+  margin-top: 15px;
+}
